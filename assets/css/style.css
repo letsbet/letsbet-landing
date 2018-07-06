@@ -422,7 +422,7 @@
     .pb_cover_v4 {
       height: inherit;
       text-align: center !important;
-      padding: 6em 0; } }
+      } }
   .pb_cover > .container,
   .pb_cover_v1 > .container,
   .pb_cover_v2 > .container,
@@ -442,7 +442,7 @@
         .pb_cover_v3 > .container > .row,
         .pb_cover_v4 > .container > .row {
           height: inherit;
-          padding: 6em 0; } }
+          } }
   .pb_cover .play,
   .pb_cover_v1 .play,
   .pb_cover_v2 .play,
@@ -2020,12 +2020,16 @@ a {
     padding:0px;
   }
 
-  .telegram {
+  .telegram , .facebook , .twitter{
     display:none;
   }
 
   .video {
     width:100% !important;
+  }
+
+  .modal-video{
+    display:none;
   }
 }
 
@@ -2114,7 +2118,7 @@ ul.token-details {
 
 .cover-intro {
   background:url("../images/cover-moon.png") no-repeat;
- /* background-size:cover;*/
+  background:url("../images/cubes-bg.jpg") no-repeat;
   background-attachment: fixed
 }
 
@@ -2145,14 +2149,27 @@ ul.token-details {
 .fixedbutton {
   position: fixed;
   bottom: 0px;
-  right: 0px; 
-}
-.fixedbutton.telegram {
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
+  right: 0px;
   font-size:15px;
   z-index:10000;
+  right: 15px;
+  min-width: 195px;
+}
+
+.fixedbutton .fa {
+  font-size:15px;
+}
+.fixedbutton.telegram {
+  bottom: 150px;
+}
+
+.fixedbutton.facebook {
+  bottom: 90px;
+
+}
+
+.fixedbutton.twitter {
+  bottom: 30px;
 }
 
 .subscribe {
@@ -2175,7 +2192,130 @@ ul.token-details {
   font-size:20px !important;
 }
 
-.section-subscribe ,#section-faq{
+.section-subscribe ,#section-faq, #section-team{
   background:#fff;
+}
+
+#section-team .card{
+  width: 240px;
+  margin-left:20px;
+  margin-bottom:20px;
+  font-size:16px;
+  float:left;
+  border:none;
+}
+
+
+.container-top {
+   background:#fff !important;
+   
+   padding:30px;
+   padding-top:45px;
+   max-width:1140px;
+   margin:0px auto;
+   margin-top:120px !important;
+}
+
+.container-max {
+  background:#fff !important;
+  width:100%;
+  margin:0px auto;
+  margin-top:120px !important;
+}
+
+.cover-black {
+  background:#222;
+}
+
+.bold {
+  font-weight:bold !important;
+}
+
+.countdown-row {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.countdown-amount{	
+  font-size:2em;
+}
+
+#auction-countdown {
+  margin-top:-50px;
+}
+.is-countdown {
+  width:100%;
+  font-size:1.5em;
+  height:auto !important;
+}
+
+.countdown-section {
+  width: 25%;
+  float: left;
+  text-align:center;
+}
+
+#section-home .row{
+  margin-top:90px;
+}
+.countdown-title {
+  margin-bottom:15px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.countdown-section{
+		width:50%;
+		float:left;
+  }
+
+  #auction-countdown {
+    height:0px !important;  
+    margin-top:0px !important;
+  }
+
+  #section-team .card {
+    width:100%;
+    margin:0px;
+    margin-top:20px;
+    
+  }
+}
+.color-white {
+  color:#ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.width-max {
+	width:100%;
+}
+
+#section-team .card-body {
+  padding:15px;
+}
+.navbar-nav.ml-auto {
+  margin:0px auto !important;
+}
+
+
+.btn-ulg {
+  padding: 0.5rem 1.5rem !important;
+  font-size: 25px;
+}
+
+.hidden {
+  display:none;
+}
+
+.role-title {
+  color:#888;
+}
+
+.card-img-top {
+  max-height:238px;
 }
 /*# sourceMappingURL=style.css.map */

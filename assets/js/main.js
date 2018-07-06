@@ -12,7 +12,10 @@ $(document).ready(function($) {
 		}, 700);
 	};	
 	
-	$(".video-play-buttom").modalVideo();
+	//var modal = $(".video-play-buttom").modalVideo({youtube: {autoplay: 1}});
+	//console.log(modal);
+	//modal.triggerEvent();
+
 	
 	
 	function createDonut(el,title,data,list,colors){
@@ -106,5 +109,26 @@ $(document).ready(function($) {
 					"#EAFAF1",
                 ]);
 	
+	$("#auction-countdown").countdown("2018/07/07 17:00:00", function(event) {
+		var days = event.strftime('%D');
+		var hours = event.strftime('%H')
+		var minutes = event.strftime('%M')
+		var seconds = event.strftime('%S')
+		$(".days").html(days);
+		$(".hours").html(hours);
+		$(".minutes").html(minutes);
+		$(".seconds").html(seconds);
+	});
+});
 
+window.addEventListener('DOMContentLoaded',function(){
+	$(".js-modal-btn").modalVideo({youtube:{autoplay:1,start:1}});
+	var playedVideo = localStorage['playedVideo'] || false;
+
+	setTimeout(function() {
+		if(!playedVideo){
+			$(".js-modal-btn").click();
+			localStorage['playedVideo']=true;
+		}
+	},5500);
 });
