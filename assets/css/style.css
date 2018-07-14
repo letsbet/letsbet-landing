@@ -2031,6 +2031,15 @@ a {
   .modal-video{
     display:none;
   }
+  
+   #section-home .btn-lg{
+	  margin-bottom:15px;
+    min-width:200px
+  }
+  
+   .btn-lg{
+	margin-bottom:15px;
+  }
 }
 
 .token-details {
@@ -2150,14 +2159,16 @@ ul.token-details {
   position: fixed;
   bottom: 0px;
   right: 0px;
-  font-size:15px;
   z-index:10000;
   right: 15px;
-  min-width: 195px;
+  min-width:60px;
+  background:#fff;
+  color:#000;
+  border:1px solid #000;
 }
 
 .fixedbutton .fa {
-  font-size:15px;
+  font-size:25px;
 }
 .fixedbutton.telegram {
   bottom: 150px;
@@ -2173,9 +2184,9 @@ ul.token-details {
 }
 
 .subscribe {
-  background: #ddd;
   padding: 15px;
   border-radius: 10px;
+  margin-top:20px;
 }
 
 .telegram.span {
@@ -2256,9 +2267,6 @@ ul.token-details {
   text-align:center;
 }
 
-#section-home .row{
-  margin-top:90px;
-}
 .countdown-title {
   margin-bottom:15px;
 }
@@ -2268,6 +2276,10 @@ ul.token-details {
 	.countdown-section{
 		width:50%;
 		float:left;
+  }
+  
+  #section-home .row{
+	margin-top:90px;
   }
 
   #auction-countdown {
@@ -2280,6 +2292,10 @@ ul.token-details {
     margin:0px;
     margin-top:20px;
     
+  }
+
+  .card-img-top{
+    padding:15px !important;
   }
 }
 .color-white {
@@ -2317,5 +2333,18 @@ ul.token-details {
 
 .card-img-top {
   max-height:238px;
+}
+
+#section-home .cointainer{
+  margin-top:80px;
+}
+
+.ratings img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#section-home .btn-lg{
+  font-size:30px;
 }
 /*# sourceMappingURL=style.css.map */
